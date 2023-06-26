@@ -1,0 +1,763 @@
+@font-face {
+    font-family: Juliette;
+    src: url(./fonts/Juliette.otf);
+}
+
+@font-face {
+    font-family: JulietteReg;
+    src: url(./fonts/Juliette-Regular.otf);
+}
+
+@font-face {
+    font-family: Graphik;
+    src: url(./fonts/Graphik.otf);
+}
+
+@font-face {
+    font-family: GraphikBold;
+    src: url(./fonts/Graphik-Bold.otf);
+}
+
+@font-face {
+    font-family: Apercu;
+    src: url(./fonts/Apercu.otf);
+}
+
+@font-face {
+    font-family: Altima;
+    src: url(./fonts/Altima.otf);
+}
+
+@font-face {
+    font-family: FF7;
+    src: url(./fonts/Final_Fantasy_VII.ttf);
+}
+
+@font-face {
+    font-family: ReplicaReg;
+    src: url(./fonts/Replica-Regular.otf);
+}
+
+@font-face {
+    font-family: ReplicaBold;
+    src: url(./fonts/Replica-Bold.otf);
+}
+
+html{
+/*    cursor: cell;*/
+    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=173337'),auto;
+}
+
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+nav{
+    display: block;
+}
+
+@media all and (max-width: 800px) {
+    nav{
+        display: none;
+    }
+}
+
+.mobilenav{
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    .mobilenav{
+        display: block;
+    }
+}
+
+.projectkhj{
+    display: none;
+    position: fixed;
+    left: 20px;
+    top: 13px;
+    z-index: 10000;
+}
+
+@media all and (max-width: 800px) {
+    .projectkhj{
+        display: block;
+    }
+}
+
+.projectkhj a{
+    text-decoration: none;
+}
+
+.projectkhj h1{
+    color: dodgerblue;
+    font-family: ReplicaReg;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mobilekhj{
+    display: none;
+    position: fixed;
+    left: 20px;
+    bottom: 13px;
+    z-index: 10000;
+}
+
+@media all and (max-width: 800px) {
+    .mobilekhj{
+        display: block;
+    }
+}
+
+.mobilekhj a{
+    text-decoration: none;
+}
+
+.mobilekhj h1{
+    color: dodgerblue;
+    font-family: ReplicaReg;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.whitekhj{
+    position: absolute;
+    left: 20px;
+    top: -57px;
+}
+
+.whitekhj h1{
+    color: white;
+    font-family: ReplicaReg;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.khj{
+    position: fixed;
+    left: 20px;
+    bottom: 13px;
+    z-index: 10000;
+}
+
+.khj a{
+    text-decoration: none;
+}
+
+.khj h1{
+    color: dodgerblue;
+    font-family: ReplicaReg;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.links{
+    position: fixed;
+    left: 20px;
+    bottom: 62px;
+    text-decoration: none;
+    text-align: left;
+    z-index: 100;
+    
+}
+
+@media all and (max-width: 800px) {
+    .links{
+        
+       
+    }
+}
+
+.links a{
+    text-decoration: none;
+    
+}
+
+.links h2{
+    border: 1px solid dodgerblue;
+    padding: 5px 5px;
+    border-radius: 10px;
+    color: dodgerblue;
+    font-family: ReplicaReg;
+    font-size: 12.5px;
+    line-height: 11px;
+    text-align: center;
+}
+
+.links h2:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.plus{
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+    text-align: right;
+    z-index: 10000;
+}
+
+.plus img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: 5s rotate linear infinite;
+}
+
+.plus h1{
+    color: dodgerblue;
+    font-family: ReplicaReg;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.formcontainer{
+    position: absolute;
+    top: px;
+    width: 200px;
+    left: 0px;
+    z-index: 10;
+    padding: 20px;
+}
+
+@media all and (max-width: 800px) {
+    .formcontainer{
+        display: none;
+    }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+
+    width: 200px; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: none;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: none;
+    font-family: apercu;
+    border-radius: 20px 0px 0px 0px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: apercu;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: black;
+}
+
+.container{
+    height: 100vh;
+    width: calc(100vh);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: dodgerblue;
+    overflow: hidden;
+}
+
+
+@media all and (max-width: 800px) {
+    .container{
+        width: 100vw;
+        height: 100vw;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.notcontainer{
+    height: 100vh;
+    width: calc(100vh/3);
+    position: absolute;
+    right: 100vh;
+    top: 0px;
+    background-color: dodgerblue;
+}
+
+@media all and (max-width: 800px) {
+    .notcontainer{
+
+    }
+}
+
+.notcard{
+    float: left;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    width: calc(100vh / 3);
+    height: calc(100vh / 3);
+    transition: .25s;
+    border-radius: 0px 18px 18px 0px;
+}
+
+@media all and (max-width: 800px) {
+    .notcard{
+        width: calc(100vh / 3);
+        height: calc(100vh / 3);
+        border-radius: 0px 0px 15px 15px;
+    }
+}
+
+.card{
+    float: left;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    width: calc(100vh / 3);
+    height: calc(100vh / 3);
+    transition: .25s;
+    border-radius: 18px;
+    /*
+    display: flex;
+    justify-content: center;
+    */
+    transform-style: preserve-3d;
+    transform-origin: center;
+      
+    animation: .4s cardanim ease-in;
+    
+}
+
+
+@media all and (max-width: 800px) {
+    .card{
+        border-radius: 15px;
+        width: calc(100vw / 3);
+        height: calc(100vw / 3);
+        animation: none;
+    }
+}
+
+@keyframes cardanim {
+    0% {
+        transform: scale(0.5);
+        border-radius: 200px;
+    }
+    100% {
+        transform: scale(1);
+        border-radius: 18px;
+    }
+}
+
+.card:hover {
+
+}
+
+.OHTbutton:hover + .OHT {
+    display: block;
+}
+
+.CCbutton:hover + .CC {
+    display: block;
+}
+
+.SVAbutton:hover + .SVA {
+    display: block;
+}
+
+.AGbutton:hover + .AG {
+    display: block;
+}
+
+.TCbutton:hover + .TC {
+    display: block;
+}
+
+.Posterbutton:hover + .Poster {
+    display: block;
+}
+
+.khjbutton:hover + .Profile {
+    display: block;
+}
+
+.Sketchbutton:hover + .Sketch {
+    display: block;
+}
+
+.extrasbutton:hover + .extras {
+    display: block;
+}
+
+
+.card img{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(0px);
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+
+}
+
+@media all and (max-width: 800px) {
+    .card img{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+.hiddencontainer{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    width: 25vw;
+    top: 20px;
+    left: 20px;
+    animation: .5s imgopacity ease;
+    background-color: whitesmoke;
+
+}
+
+@media all and (max-width: 800px) {
+    .hiddencontainer img{
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .hiddencontainer h3{
+        display: none;
+    }
+}
+
+.OHT{
+    display: none;
+}
+
+.CC{
+    display: none;
+}
+
+.SVA{
+    display: none;
+}
+
+.AG{
+    display: none;
+}
+
+.TC{
+    display: none;
+}
+
+.Poster{
+    display: none;
+}
+
+.Profile{
+    display: none;
+}
+
+.Sketch{
+    display: none;
+}
+
+.extras{
+    display: none;
+}
+
+@keyframes imgopacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hiddencontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hiddencontainer h3{
+    margin: 5px 0px;
+    padding: 0px;
+    font-family: Apercu;
+    font-size: 12.5px;
+    line-height: 20px;
+    color: dodgerblue;
+}
+
+.overlay { 
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: 100000; 
+    left: 0;
+    top: 0;
+    background-color: dodgerblue; 
+    overflow-x: hidden; 
+    transition: 1s; 
+
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 60px; 
+    text-align: left; 
+    margin-top: 0px; 
+    padding: 0px 20px 0px 20px;
+}
+
+.overlay .overlay-content a {
+    padding: 10px 0px;
+    text-decoration: none;
+    font-family: ReplicaReg;
+    font-size: 24px;
+    color: white;
+    display: block;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.overlay .closebtn h1{
+    color: white;
+    font-family: ReplicaReg;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 25px;
+    cursor: pointer;
+   
+}
+
+.nextprev{
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+@media all and (max-width: 800px) {
+    .nextprev{
+        display: none;
+    }
+}
+
+.next{
+    position: absolute;
+    top: 0px;
+    left: 47px;
+    
+}
+
+.next a{
+    text-decoration: none;
+}
+
+.next h1{
+    font-family: ReplicaReg;
+    font-size: 40px;
+    color: dodgerblue;
+    line-height: 0px;
+    
+}
+
+.prev{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    
+}
+
+.prev a{
+    text-decoration: none;
+}
+
+.prev h1{
+    font-family: ReplicaReg;
+    font-size: 40px;
+    color: dodgerblue;
+    line-height: 0px;
+    
+}
+
+.next: hover{
+    animation: .5s bounce infinite;
+    transform: scaleX(2);
+}
+
+.prev: hover{
+    animation: .5s bounce infinite;
+}
+
+
+@keyframes bounce{
+    
+    0%{
+        transform: translateY(0px);
+    }
+    
+    100%{
+        transform: translateY(50px);
+    }
+    
+}
+
+.bgoverlay{
+    position: absolute; left: 0px; width: 100%; height: 100%; background-color: white; z-index: 10000000;
+}
+
+
+.anim-container{
+    position: absolute; 
+    left: 20px;
+    bottom: 150px;
+    height: 335px;
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    
+}
+
+.scrollimg-container{
+    
+    background: transparent;
+    display: none;
+    position: absolute;
+    bottom: 35px;
+   
+   
+}
+
+#scrollimg1{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    
+    
+}
+
+
+.slidecontainer{
+   
+    display: block;
+    width: 280px;
+    height: 30px;
+    position: absolute;
+    
+    bottom: 0px;
+    margin: 0 auto;
+    
+    
+}
+
+.slidercss{
+     -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 155px;
+    height: 20px;
+    background: dodgerblue;
+    border-radius: 50px;
+    margin: 0px;
+    padding: 3px;
+}
+
+.slidercss:hover{
+    opacity: 1;
+}
+
+.slidercss::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  color: white;
+  background-color: white;
+     border-radius: 40px;
+  cursor: pointer;
+    transition: .3s;
+}
+
+.slidercss::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  color: white;
+  background: white;
+  border-radius: 40px;
+  cursor: pointer;
+    transition: 0.3s;
+}
+
+#demo{ color: transparent; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
