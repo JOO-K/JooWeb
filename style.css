@@ -94,7 +94,7 @@ nav{
 }
 
 .projectkhj h1{
-    color: dodgerblue;
+    color: black;
     font-family: ReplicaReg;
     font-size: 35px;
     margin: 0px;
@@ -105,8 +105,9 @@ nav{
     display: none;
     position: fixed;
     left: 20px;
-    bottom: 13px;
+    top: 13px;
     z-index: 10000;
+    width: 370px;
 }
 
 @media all and (max-width: 800px) {
@@ -115,14 +116,28 @@ nav{
     }
 }
 
+#mobilekhj{
+    position: absolute;
+    top: 53px;
+    margin-left: 23px;
+}
+
 .mobilekhj a{
     text-decoration: none;
 }
 
 .mobilekhj h1{
-    color: dodgerblue;
+    color: black;
     font-family: ReplicaReg;
     font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mobilekhj h2{
+    color: black;
+    font-family: ReplicaReg;
+    font-size: 13px;
     margin: 0px;
     padding: 0px;
 }
@@ -141,10 +156,28 @@ nav{
     padding: 0px;
 }
 
+#khj{
+    margin-left: 25px;
+}
+
+.globeicon{
+    position: absolute;
+    left: 2px;
+    top: 62px;
+    width: 15px;
+}
+
+
+@media all and (max-width: 800px) {
+    .globeicon{
+        top: 53px;
+    }
+}
+
 .khj{
     position: fixed;
     left: 20px;
-    bottom: 13px;
+    top: 12px;
     z-index: 10000;
 }
 
@@ -153,17 +186,25 @@ nav{
 }
 
 .khj h1{
-    color: dodgerblue;
+    color: black;
     font-family: ReplicaReg;
-    font-size: 40px;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.khj h2{
+    color: black;
+    font-family: ReplicaReg;
+    font-size: 15px;
     margin: 0px;
     padding: 0px;
 }
 
 .links{
     position: fixed;
-    left: 20px;
-    bottom: 62px;
+    left: 22px;
+    top: 110px;
     text-decoration: none;
     text-align: left;
     z-index: 100;
@@ -183,10 +224,10 @@ nav{
 }
 
 .links h2{
-    border: 1px solid dodgerblue;
+    border: 1px solid black;
     padding: 5px 5px;
     border-radius: 10px;
-    color: dodgerblue;
+    color: black;
     font-family: ReplicaReg;
     font-size: 12.5px;
     line-height: 11px;
@@ -194,7 +235,7 @@ nav{
 }
 
 .links h2:hover{
-    background-color: dodgerblue;
+    background-color: black;
     color: white;
 }
 
@@ -216,7 +257,7 @@ nav{
 }
 
 .plus h1{
-    color: dodgerblue;
+    color: black;
     font-family: ReplicaReg;
     font-size: 40px;
     margin: 0px;
@@ -283,8 +324,8 @@ input[type=submit]:hover {
     width: calc(100vh);
     position: absolute;
     right: 0px;
-    top: 0px;
-    background-color: dodgerblue;
+    bottom: 0px;
+    background-color: black;
     overflow: hidden;
 }
 
@@ -293,7 +334,7 @@ input[type=submit]:hover {
     .container{
         width: 100vw;
         height: 100vw;
-        top: 0px;
+        bottom: 0px;
         left: 0px;
     }
 }
@@ -303,8 +344,8 @@ input[type=submit]:hover {
     width: calc(100vh/3);
     position: absolute;
     right: 100vh;
-    top: 0px;
-    background-color: dodgerblue;
+    bottom: 0px;
+    background-color: black;
 }
 
 @media all and (max-width: 800px) {
@@ -511,7 +552,7 @@ input[type=submit]:hover {
     font-family: Apercu;
     font-size: 12.5px;
     line-height: 20px;
-    color: dodgerblue;
+    color: black;
 }
 
 .overlay { 
@@ -522,7 +563,7 @@ input[type=submit]:hover {
     z-index: 100000; 
     left: 0;
     top: 0;
-    background-color: dodgerblue; 
+    background-color: black; 
     overflow-x: hidden; 
     transition: 1s; 
 
@@ -572,9 +613,7 @@ input[type=submit]:hover {
 }
 
 .nextprev{
-    position: fixed;
-    padding: 0px;
-    margin: 0px;
+    
     
     
 }
@@ -599,14 +638,14 @@ input[type=submit]:hover {
 .next h1{
     font-family: ReplicaReg;
     font-size: 40px;
-    color: dodgerblue;
+    color: black;
     line-height: 0px;
     
 }
 
 .prev{
     position: absolute;
-    top: 0px;
+    bottom: 5px;
     left: 15px;
     
 }
@@ -618,7 +657,7 @@ input[type=submit]:hover {
 .prev h1{
     font-family: ReplicaReg;
     font-size: 40px;
-    color: dodgerblue;
+    color: black;
     line-height: 0px;
     
 }
@@ -699,7 +738,7 @@ input[type=submit]:hover {
     appearance: none;
     width: 155px;
     height: 20px;
-    background: dodgerblue;
+    background: black;
     border-radius: 50px;
     margin: 0px;
     padding: 3px;
@@ -738,7 +777,37 @@ input[type=submit]:hover {
 
 
 
+section {
+    
+    position: absolute;
+    left: 21.5px;
+    bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0em;
+    
+  }
 
+section h1{
+    font-family: ReplicaBold;
+    font-size: 8px;
+    color: black;
+    margin-left: 3px;
+}
+
+  .clock {
+    justify-self: center;
+    text-align: center;
+    margin-right: 60px;
+     
+   
+  }
+
+  analog-clock {
+    width: 2rem;
+    height: 2rem;
+         
+  }
 
 
 
