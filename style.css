@@ -44,8 +44,7 @@
 }
 
 html{
-/*    cursor: cell;*/
-    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=173337'),auto;
+
 }
 
 body{
@@ -350,7 +349,12 @@ input[type=submit]:hover {
 
 @media all and (max-width: 800px) {
     .notcontainer{
-
+        
+        width: 100vw;
+        height: calc(100vw / 3);
+        bottom: 100vw;
+        left: 0px;
+        
     }
 }
 
@@ -366,8 +370,9 @@ input[type=submit]:hover {
 
 @media all and (max-width: 800px) {
     .notcard{
-        width: calc(100vh / 3);
-        height: calc(100vh / 3);
+         
+        width: calc(100vw / 3);
+        height: calc(100vw / 3);
         border-radius: 0px 0px 15px 15px;
     }
 }
@@ -798,7 +803,7 @@ section h1{
   .clock {
     justify-self: center;
     text-align: center;
-    margin-right: 60px;
+    margin-right: 30px;
      
    
   }
