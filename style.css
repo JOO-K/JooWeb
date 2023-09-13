@@ -202,7 +202,7 @@ nav{
 
 .links{
     position: fixed;
-    left: 22px;
+    left: -252px;
     top: 110px;
     text-decoration: none;
     text-align: left;
@@ -813,6 +813,46 @@ section h1{
     height: 2rem;
          
   }
+
+#button1{
+    
+    animation: buttonanim .5s ease-out;
+         animation-fill-mode: forwards;
+}
+
+#button2{
+    
+    animation: buttonanim .5s ease-out;
+         animation-fill-mode: forwards;
+    animation-delay: .1s;
+}
+
+#button3{
+    
+    animation: buttonanim .5s ease-out;
+         animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
+
+#button4{
+    
+    animation: buttonanim .5s ease-out;
+         animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+
+#button5{
+    
+    animation: buttonanim .5s ease-out;
+         animation-fill-mode: forwards;
+    animation-delay: .4s;
+}
+
+@keyframes buttonanim {
+  from {transform: translateX(0px)}
+  to {transform: translateX(270px)}
+}
+
 
 
 
