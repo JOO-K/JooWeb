@@ -39,11 +39,11 @@
 
 
 
-                <a href="Sketches.html"><h2>ABOUT ME</h2></a>
-                <a href="Posters.html"><h2>DRAWINGS</h2></a>
-                <a href=""><h2>POSTERS</h2></a>
-                <a href=""><h2>GRAFIK DESIGN</h2></a>
-                <a href=""><h2>WEB DESIGN</h2></a>
+                <a href="Sketches.html"><h2 id="button1">ABOUT ME</h2></a>
+                <a href="Posters.html"><h2 id="button2">DRAWINGS</h2></a>
+                <a href=""><h2 id="button3">POSTERS</h2 ></a>
+                <a href=""><h2 id="button4">GRAFIK DESIGN</h2></a>
+                <a href=""><h2 id="button5">WEB DESIGN</h2></a>
                
 
 
@@ -83,6 +83,40 @@
                 <a href=""><h2>ABOUT ME</h2></a>
 
             </div>
+            
+           
+            <div class="plus">
+                <h1><span onclick="openNav()">+</span></h1>
+            </div>
+
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>x</h1></a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <div class="whitekhj">
+                        <a href="index.html" class="khjbutton"><h1 id="whitekhj">home</h1></a>
+                    </div>
+                    <br>
+                    
+                    <a href="Sketches.html">Drawings</a>
+                    <a href="JM.html">Jewish Museum NYC</a>
+                    <a href="OHT.html">OHT NYC</a>
+                    <a href="CC.html">Crack Couture</a>
+                    <a href="SVA.html">SVA-VCS</a>
+                    <a href="AG.html">Arlette Geller</a>
+                    <a href="EXE.html">Digital Time Capsule</a>
+                    <a href="VG.html">Virtual Gallery</a>
+                    <a href="Posters.html">Posters</a>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
         </div>
 
         <div class="container">
@@ -350,6 +384,18 @@
 
             }
 
+        </script>
+        
+    <script>
+            /* Open */
+            function openNav() {
+                document.getElementById("myNav").style.display = "block";
+            }
+
+            /* Close */
+            function closeNav() {
+                document.getElementById("myNav").style.display = "none";
+            }
         </script>
 
         <!--
